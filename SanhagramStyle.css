@@ -1,0 +1,457 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url("img/happy-customers-mobile-app.jpg");
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Position text in the middle of the page/image */
+
+.bg-text {
+    background-color: Transparent;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica;
+    border: 0px solid #f1f1f1;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 40px;
+    text-align: left;
+}
+
+.bg-header_image {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 40px;
+    text-align: center;
+}
+
+#buttonlogin,
+#buttoncadastrar {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #7519DC, #DD586B);
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#buttoncadastro {
+    width: 100%;
+    background-color: Transparent;
+    color: white;
+    font-size: 16px;
+    font-family: Helvetica;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#buttoncadastro:hover {
+    color: #ffffff;
+    border: 2px solid #ccc;
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#buttonlogin:hover {
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+}
+
+#buttoncadastrar:hover {
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+}
+
+
+/*-------------------------------------------------------LOGIN--------------------------------------*/
+
+.bg-textLogin {
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica;
+    border: 0px solid #f1f1f1;
+    border-radius: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bg-textlogin {
+    background: -webkit-linear-gradient(135deg, #9E32B5, #f26d80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 35px;
+    top: 35%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.bg-header_image_Login {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 40px;
+    text-align: center;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type=number],
+select {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type=password],
+select {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type=submit]:hover {
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+}
+
+input[type=password]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input[type=text]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input[type=number]:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input[type=text]:focus {
+    outline-width: 0;
+    box-shadow: 0 0 2pt 2pt #ccc;
+}
+
+input[type=password]:focus {
+    outline-width: 0;
+    box-shadow: 0 0 2pt 2pt #ccc;
+}
+
+input[type=number]:focus {
+    outline-width: 0;
+    box-shadow: 0 0 2pt 2pt #ccc;
+}
+
+.bg-imageCadastro {
+    background-image: url("img/Woman on the phone.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-text_Cadastro {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica;
+    border: 0px solid #f1f1f1;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 35px;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bg-textCadastro {
+    background: -webkit-linear-gradient(135deg, #9E32B5, #f26d80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 30px;
+    top: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.bg-header_imageCadastro {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 40px;
+    text-align: center;
+}
+
+select:focus {
+    outline-width: 0;
+    box-shadow: 0 0 2pt 2pt #ccc;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+option {
+    width: 100%;
+    padding: 16px 20px;
+    border: 0px solid #ccc;
+    background-color: #9E32B5;
+}
+
+.bg-imagePagInic {
+    background-image: url("img/whatsapp_background.jpg");
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    height: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.bg-textPagInic {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica;
+    border: 0px solid #f1f1f1;
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    z-index: 2;
+    width: 98%;
+    height: 600px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image_textPagInic {
+    background-color: Transparent;
+    /* Fallback color */
+    position: absolute;
+    top: 70px;
+    left: 650px;
+    z-index: 2;
+    height: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+.topnav {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    top: 5px;
+    width: 98%;
+    left: 20px;
+    height: 50px;
+    align: center;
+    border-radius: 5px;
+    z-index: 3;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    color: white;
+    border-radius: 5px;
+    font-family: Helvetica;
+    height: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#login {
+    float: right;
+    color: white;
+    border-radius: 5px;
+    font-family: Helvetica;
+    height: 100%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+    color: white;
+}
+
+#login:hover {
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+    color: white;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-image: linear-gradient(to bottom right, #7519DC, #DD586B);
+    color: white;
+}
+
+#login:active {
+    background-image: linear-gradient(to bottom right, #7519DC, #DD586B);
+    color: white;
+}
+
+.logo-imagePagInic {
+    width: 60px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: -15px;
+    margin-left: -5px;
+}
+
+.footerPagInic {
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+    z-index: 2;
+    position: absolute;
+    top: 820px;
+    left: 700px;
+}
+
+.image_textEscrever {
+    background-color: Transparent;
+    position: absolute;
+    top: 68px;
+    left: 650px;
+    z-index: 2;
+    height: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+.image_textApagar {
+    background-color: Transparent;
+    position: absolute;
+    top: 65px;
+    left: 650px;
+    z-index: 2;
+    height: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+.image_textEnviar {
+    background-color: Transparent;
+    position: absolute;
+    top: 65px;
+    left: 650px;
+    z-index: 2;
+    height: 600px;
+    padding: 5px;
+    text-align: center;
+}

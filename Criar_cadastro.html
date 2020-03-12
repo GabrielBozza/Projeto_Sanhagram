@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+<head>
+  <meta charset = 'UTF-8'>
+  <title>Criar Cadastro</title>
+  <link rel="stylesheet" href="SanhagramStyle.css">
+</head>
+<body>
+
+  <div class="bg-imageCadastro"></div>
+
+  <div class="bg-header_imageCadastro">
+    <img src="img/LogoSanhagram1.png" width="176" height="152">
+  </div>
+
+  <div class="bg-textCadastro">
+    <center>Cadastre-se</center>
+  </div>
+
+  <div class="bg-text_Cadastro">
+    <br>
+
+    <form action="./Login.html">
+      <label for="fname">Nome completo:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="numero">Número:</label><br>
+      <input type="number" id="numero" name="numero"><br>
+      <label for="ano">Ano de graduação:</label><br>
+      <select id="ano" name="ano">
+        <option value="1">1° ano</option>
+        <option value="2">2° ano</option>
+        <option value="3">3° ano</option>
+        <option value="4">4° ano</option>
+        <option value="5">5° ano</option>
+      </select><br>
+      <label for="login">Nome de usuário (login):</label><br>
+      <input type="text" id="login" name="login"><br>
+      <label for="senha">Senha:</label><br>
+      <input type="password" id="senha" name="senha" value=""><br><br>
+      <input type="submit" id = "buttoncadastrar" value="CADASTRAR">
+    </form>
+  </div>
+  <script src = "SanhagramScript.js"></script>
+</body>
+</html>
