@@ -73,17 +73,16 @@ html {
     font-size: 16px;
     font-family: Helvetica;
     padding: 14px 20px;
-    margin: 8px 0;
-    border: 1px solid #ffffff;
+    margin: 10px 0px 10px 0px;
+    border: 1.1px solid #ffffff;
     border-radius: 8px;
     cursor: pointer;
 }
 
 #buttoncadastro:hover {
     color: #ffffff;
-    border: 2px solid #ccc;
     background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2pt 2pt #ccc;
 }
 
 #buttonlogin:hover {
@@ -94,18 +93,15 @@ html {
     background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
 }
 
-#buttonlogin:focus {
-    outline-width: 0;
-    box-shadow: 0 0 2pt 2pt #ccc;
-}
-
+#buttonlogin:focus,
 #buttoncadastrar:focus {
     outline-width: 0;
     box-shadow: 0 0 2pt 2pt #ccc;
 }
 
-
-
+#buttoncadastro:focus {
+    outline-width: 0;
+}
 /*-------------------------------------------------------LOGIN--------------------------------------*/
 
 .bg-textLogin {
