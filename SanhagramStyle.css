@@ -2,10 +2,10 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
 }
 
-* {
+* {/*Esse asterisco significa que vale para tudo*/
     box-sizing: border-box;
 }
 
@@ -20,11 +20,10 @@ html {
     background-size: cover;
 }
 
-.bg-text {
+.botoes_login_ou_cadastro {
     background-color: Transparent;
     color: white;
     font-weight: bold;
-    font-family: Helvetica;
     border: 0px solid #f1f1f1;
     border-radius: 10px;
     position: absolute;
@@ -53,7 +52,6 @@ html {
     background-image: linear-gradient(to bottom right, #7519DC, #DD586B);
     color: white;
     font-size: 16px;
-    font-family: Helvetica;
     font-weight: bold;
     padding: 14px 20px;
     margin: 15px 0px 10px 0px;
@@ -68,7 +66,6 @@ html {
     background-color: Transparent;
     color: white;
     font-size: 16px;
-    font-family: Helvetica;
     padding: 14px 20px;
     margin: 10px 0px 10px 0px;
     border: 1.1px solid #ffffff;
@@ -98,13 +95,12 @@ html {
 }
 /*-------------------------------------------------------LOGIN--------------------------------------*/
 
-.bg-textLogin {
+.card_Login {
     background-color: rgb(0, 0, 0);
     backdrop-filter: blur(15px);
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-weight: bold;
-    font-family: Helvetica;
     border: 0px solid #f1f1f1;
     border-radius: 10px;
     position: absolute;
@@ -118,14 +114,14 @@ html {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.bg-textlogin {
+.titulo_Login {
     background: -webkit-linear-gradient(135deg, #9E32B5, #f26d80);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-family: Helvetica;
-    font-size: 35px;
-    top: 35%;
+    font-size: 37px;
+    top: 5%;
+    margin: 20px 0px 20px 0px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -142,48 +138,15 @@ html {
     text-align: center;
 }
 
+input[type=number],
+input[type=password],
 input[type=text],
 select {
     width: 100%;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.3);
-    font-family: Helvetica;
     color: #ffffff;
     font-size: 16px;
     padding: 12px 20px;
-    margin: 5px 0px 18px 0px;
-    display: inline-block;
-    border: 0px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-input[type=number],
-select {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.3);
-    font-family: Helvetica;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 12px 20px;
-    margin: 5px 0px 18px 0px;
-    display: inline-block;
-    border: 0px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-input[type=password],
-select {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    padding: 12px 20px;
-    font-size: 16px;
     margin: 5px 0px 18px 0px;
     display: inline-block;
     border: 0px solid #ccc;
@@ -196,28 +159,14 @@ input[type=submit]:hover {
     background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
 }
 
-input[type=password]:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-input[type=text]:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
+input[type=password]:hover,
+input[type=text]:hover,
 input[type=number]:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-input[type=text]:focus {
-    outline-width: 0;
-    box-shadow: 0 0 2pt 2pt #ccc;
-}
-
-input[type=password]:focus {
-    outline-width: 0;
-    box-shadow: 0 0 2pt 2pt #ccc;
-}
-
+input[type=text]:focus,
+input[type=password]:focus,
 input[type=number]:focus {
     outline-width: 0;
     box-shadow: 0 0 2pt 2pt #ccc;
@@ -241,8 +190,10 @@ option {
     width: 100%;
     padding: 16px 20px;
     border: 0px solid #ccc;
-    background-color: #9E32B5;
+    background-color: rgb(176, 107, 192);
 }
+
+/*********************************************CADASTRO**********************************************************/
 
 .bg-imageCadastro {
     background-image: url("img/Woman on the phone.jpg");
@@ -254,12 +205,11 @@ option {
     background-size: cover;
 }
 
-.bg-text_Cadastro {/*Card onde fica o form em si*/
+.card_Cadastro {/*Card onde fica o form em si*/
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(15px);
     color: white;
     font-weight: bold;
-    font-family: Helvetica;
     border: 0px solid #f1f1f1;
     border-radius: 10px;
     position: absolute;
@@ -274,12 +224,11 @@ option {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.bg-textCadastro {/*Titulo Cadastre-sse*/
+.titulo_Cadastro {/*Titulo Cadastre-sse*/
     background: -webkit-linear-gradient(135deg, #9E32B5, #f26d80);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-family: Helvetica;
     margin: 10px 0px 10px 0px;
     font-size: 33px;
     top: 5%;
@@ -299,6 +248,8 @@ option {
     text-align: center;
 }
 
+/***********************************************PAGINA INICIAL**************************************************************/
+
 .bg-imagePagInic {
     background-image: url("img/whatsapp_background.jpg");
     filter: blur(1px);
@@ -311,12 +262,10 @@ option {
 }
 
 .bg-textPagInic {
-    background-color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     color: white;
     font-weight: bold;
-    font-family: Helvetica;
     border: 0px solid #f1f1f1;
     border-radius: 10px;
     position: absolute;
@@ -330,42 +279,25 @@ option {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.image_textPagInic {
-    background-color: Transparent;
-    /* Fallback color */
-    position: absolute;
-    top: 70px;
-    left: 650px;
-    z-index: 2;
-    height: 600px;
-    padding: 5px;
-    text-align: center;
-}
-
-.topnav {
+.topnav { /*Barra de navegacao em si*/
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     position: fixed;
     backdrop-filter: blur(10px);
     top: 5px;
     width: 98%;
     left: 20px;
     height: 50px;
-    align: center;
+    text-align: center;
     border-radius: 5px;
     z-index: 3;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    overflow: hidden;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
+.topnav a {/*BOtoes da barra de navegacao*/
     float: left;
     color: white;
     border-radius: 5px;
-    font-family: Helvetica;
     height: 100%;
     text-align: center;
     padding: 14px 16px;
@@ -377,8 +309,6 @@ option {
     background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
     color: white;
 }
-
-/* Add a color to the active/current link */
 
 .topnav a.active {
     background-image: linear-gradient(to bottom right, #7519DC, #DD586B);
@@ -403,35 +333,34 @@ option {
     left: 700px;
 }
 
-.image_textEscrever {
+.image_textEscrever,
+.image_textApagar,
+.image_textEnviar,
+.image_textMensagens {
     background-color: Transparent;
     position: absolute;
-    top: 68px;
     left: 650px;
     z-index: 2;
-    height: 600px;
     padding: 5px;
     text-align: center;
+}
+
+.image_textEscrever {
+    top: 68px;
+    height: 600px;
 }
 
 .image_textApagar {
-    background-color: Transparent;
-    position: absolute;
     top: 65px;
-    left: 650px;
-    z-index: 2;
     height: 600px;
-    padding: 5px;
-    text-align: center;
 }
 
 .image_textEnviar {
-    background-color: Transparent;
-    position: absolute;
     top: 65px;
-    left: 650px;
-    z-index: 2;
     height: 600px;
-    padding: 5px;
-    text-align: center;
+}
+
+.image_textMensagens {
+    top: 70px;
+    height: 600px;
 }
