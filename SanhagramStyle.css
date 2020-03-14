@@ -96,9 +96,9 @@ html {
 /*-------------------------------------------------------LOGIN--------------------------------------*/
 
 .card_Login {
-    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(15px);
     background-color: rgba(0, 0, 0, 0.4);
+    margin: 20px 0px 20px 0px;
     color: white;
     font-weight: bold;
     border: 0px solid #f1f1f1;
@@ -132,6 +132,7 @@ html {
     position: absolute;
     top: 15%;
     left: 50%;
+    margin: 20px 0px 20px 0px;
     transform: translate(-50%, -50%);
     z-index: 2;
     padding: 40px;
@@ -251,23 +252,21 @@ option {
 /***********************************************PAGINA INICIAL**************************************************************/
 
 .bg-imagePagInic {
-    background-image: url("img/whatsapp_background.jpg");
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-    height: 120%;
+    background-image: url("img/Background_gradient_wallpaper.jpg");
+    height: 130%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
 }
 
-.bg-textPagInic {
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
+.card_PagInic {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
     color: white;
     font-weight: bold;
     border: 0px solid #f1f1f1;
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
     top: 120px;
     left: 20px;
@@ -280,29 +279,30 @@ option {
 }
 
 .topnav { /*Barra de navegacao em si*/
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     overflow: hidden;
     position: fixed;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     top: 5px;
     width: 98%;
     left: 20px;
-    height: 50px;
+    height: 60px;
     text-align: center;
     border-radius: 5px;
     z-index: 3;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.topnav a {/*BOtoes da barra de navegacao*/
+.topnav a {/*Botoes da barra de navegacao*/
     float: left;
     color: white;
     border-radius: 5px;
     height: 100%;
+    vertical-align: middle;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px 30px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .topnav a:hover {
