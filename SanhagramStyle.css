@@ -282,7 +282,7 @@ option {
 
 .topnav { /*Barra de navegacao em si*/
     background-color: rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    /*overflow: hidden; --> ESCONDE O DROPDOWN MENU*/
     position: fixed;
     backdrop-filter: blur(7px);
     top: 5px;
@@ -333,8 +333,9 @@ option {
     width: 60px;
     height: 50px;
     overflow: hidden;
-    margin-top: -15px;
-    margin-left: -5px;
+    margin-top: -10px;
+    margin-left: -6px;
+    margin-bottom: 0px;
 }
 
 .footerPagInic {
@@ -429,3 +430,55 @@ option {
     outline-width: 0;
     box-shadow: 0 0 2pt 2pt #ccc;
 }
+
+.dropdown {
+    float: left;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 60px;
+  }
+  
+ .dropdown:hover .dropbtn {
+    background-image: linear-gradient(to bottom right, #9E32B5, #f26d80);
+    color:white;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  .dropdown-content a {
+    margin-top: 0px;
+    z-index: 3;
+    float: none;
+    color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    margin-top: -6px;
+    background-color: rgba(0,0,0,0.3);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 5px;
+    height: auto;
+    display: block;
+  }
