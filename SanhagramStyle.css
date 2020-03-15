@@ -95,7 +95,7 @@ html {
 #buttoncadastro:focus {
     outline-width: 0;
 }
-/*-------------------------------------------------------LOGIN--------------------------------------*/
+/******************************************************LOGIN***********************************************************************/
 
 .card_Login {
     backdrop-filter: blur(15px);
@@ -196,7 +196,7 @@ option {
     background-color: rgb(176, 107, 192);
 }
 
-/*********************************************CADASTRO**********************************************************/
+/*************************************************************CADASTRO**********************************************************/
 
 .bg-imageCadastro {
     background-image: url("img/Woman on the phone.jpg");
@@ -251,7 +251,7 @@ option {
     text-align: center;
 }
 
-/***********************************************PAGINA INICIAL**************************************************************/
+/**********************************************************PAGINA INICIAL**************************************************************/
 
 .bg-imagePagInic {
     background-image: url("img/Background_gradient_wallpaper.jpg");
@@ -263,7 +263,7 @@ option {
 }
 
 .card_PagInic {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     color: white;
     font-weight: bold;
@@ -382,7 +382,7 @@ option {
 .card_PagInic amigos,
 .card_PagInic conversa,
 .card_PagInic escrever {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.35);
     border-radius: 5px;
     overflow: auto;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
