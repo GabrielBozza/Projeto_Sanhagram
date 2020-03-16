@@ -25,3 +25,47 @@ function verifica_modo_noturno() {
         document.getElementById('cards_internas2').style["background-color"]="rgba(0, 0, 0, 0.35)";//vale p conversa e textarea
     }
 }
+
+var myInput = document.getElementById("senha");
+
+/*****************************************VALIDA A SENHA INSERIDA QUANDO O USUARIO COMECA A DIGITAR***********************/
+myInput.onkeyup = function() {
+  // Valida letras minusculas
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+}
+
+  // Valida letras maiusculas
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Valida numeros
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Valida comprimento
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
