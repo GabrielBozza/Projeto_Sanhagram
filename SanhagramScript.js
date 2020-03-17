@@ -10,7 +10,7 @@ function modo_noturno() {
         document.getElementById('modo_noturno').innerHTML='<i class="fa fa-fw fa-moon-o"></i> Modo noturno';
         document.getElementById('card_PagInic').style["background-color"]="rgba(255, 255, 255, 0.2)";
         document.getElementById('cards_internas1').style["background-color"]="rgba(255, 255, 255, 0.35)";//vale p amigos e escrever 
-        document.getElementById('cards_internas2').style["background-color"]="rgba(255, 255, 255, 0.35)";//vale p conversa e textarea
+        document.getElementById('cards_internas2').style["background-color"]="rgba(255, 255, 255, 0.35)";
         localStorage.setItem("modo","modo_claro");//ELEMENTO ACESSIVEL POR TODOS
     }
 }
@@ -68,4 +68,16 @@ myInput.onkeyup = function() {
     length.classList.remove("valid");
     length.classList.add("invalid");
   }
+}
+
+function adicionar_mensagem() {
+  var tag = document.createElement("contato_mensagem");
+  tag.setAttribute('class','contato_mensagem');
+  var tag2 = document.createElement("i");
+  tag2.setAttribute('class','fa fa-fw fa-user');
+  tag.appendChild(tag2);
+  var text = document.createTextNode(" Amigo 1");
+  tag.appendChild(text);
+  var element = document.getElementById("cards_internas1");
+  element.appendChild(tag);
 }
