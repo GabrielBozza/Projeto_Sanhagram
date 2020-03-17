@@ -482,3 +482,32 @@ option {
     height: auto;
     display: block;
   }
+
+/*******************************************SCROLLBAR******************************************************/
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: 3px 3px 10px black;
+    border-radius: 2px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color:  rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 2px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color:  rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background-color:  rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+  }
