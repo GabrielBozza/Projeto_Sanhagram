@@ -19,7 +19,8 @@
       <label for="login">Nome de usuário:</label><br>
       <input type="text" id="login" name="login" required><br><br>
       <label for="senha">Senha:</label><br>
-      <input type="password" id="senha" name="senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity('A senha deve conter letras maiúsculas, minúsculas e números')" required><br><br>
+      <input type="password" id="senha" name="senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      title="A senha deve conter letras maiúsculas, minúsculas e números" required><br><br>
       <input type="submit" id = "buttonlogin" value="LOGIN">
     </form>
 
