@@ -70,14 +70,92 @@ myInput.onkeyup = function() {
   }
 }
 
-function adicionar_mensagem() {
-  var tag = document.createElement("contato_mensagem");
-  tag.setAttribute('class','contato_mensagem');
-  var tag2 = document.createElement("i");
-  tag2.setAttribute('class','fa fa-fw fa-user');
-  tag.appendChild(tag2);
-  var text = document.createTextNode(" Amigo 1");
+function adicionar_mensagem() { 
+
+    if(typeof(localStorage.getItem("num")) == 'undefined'){/* SE EH O PRIMEIRO */
+      localStorage.setItem("num","0");
+    }
+
+    var tag = document.createElement("contato_mensagem");
+    tag.setAttribute('id','contato_mensagem'+localStorage.getItem("num"));
+    tag.setAttribute('onclick','recuperar_info("Mensagem "+id)');
+    var tag2 = document.createElement("i");
+    tag2.setAttribute('class','fa fa-fw fa-envelope');
+    tag.appendChild(tag2);
+    var text = document.createTextNode(" Mensagem "+ localStorage.getItem("num"));
+    var y = parseInt(localStorage.getItem("num"));
+    y=y+1;
+    localStorage.setItem("num",y.toString());
+    tag.appendChild(text);
+    var element = document.getElementById("cards_internas1");
+    element.appendChild(tag);
+}
+
+function recuperar_info(param) {
+
+  remover_mensagem_atual();
+
+  var tag = document.createElement("texto_mensagem");
+  tag.setAttribute('id','texto_mensagem');
+  var text = document.createTextNode(" Texto da mensagem "+param);
   tag.appendChild(text);
-  var element = document.getElementById("cards_internas1");
+
+  var botao_enviar = document.createElement("input");
+  botao_enviar.setAttribute('type','submit');
+  botao_enviar.setAttribute('id','botao_enviar_para');
+  botao_enviar.setAttribute('value','ENVIAR PARA');
+
+  var element = document.getElementById("texto");
   element.appendChild(tag);
+  document.getElementById("form").appendChild(botao_enviar);
+}
+
+function remover_mensagem_atual() {
+
+  var element = document.getElementById('texto_mensagem');
+
+  if(typeof(element) != 'undefined' && element != null) {
+    var parent = document.getElementById("texto");
+
+    var child = document.getElementById('texto_mensagem');
+    parent.removeChild(child);
+
+    var parent2 = document.getElementById("form");
+    var child2 = document.getElementById('botao_enviar_para');
+    parent2.removeChild(child2);
+  }
+}
+
+function adicionar_destinatarios() { 
+
+  for(var i=0;i<24;i++){
+
+    if(typeof(localStorage.getItem("num")) == 'undefined'){/* SE EH O PRIMEIRO */
+      localStorage.setItem("num","0");
+    }
+
+    var label = document.createElement("label");
+    label.setAttribute('class','container');
+    
+    var tag2 = document.createElement("i");
+    tag2.setAttribute('class','fa fa-fw fa-user');
+    label.appendChild(tag2);
+    
+    var text = document.createTextNode(" Amigo "+ localStorage.getItem("num"));
+    var y = parseInt(localStorage.getItem("num"));
+    y=y+1;
+    localStorage.setItem("num",y.toString());
+    label.appendChild(text);
+
+    var input = document.createElement("input");
+    input.setAttribute('type','checkbox');
+    label.appendChild(input);
+
+    var span = document.createElement("span");
+    span.setAttribute('class','checkmark');
+    label.appendChild(span);
+
+    var element = document.getElementById("cards_internas2");
+    element.appendChild(label);
+  }
 }
